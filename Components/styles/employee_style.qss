@@ -1,0 +1,291 @@
+/* General App Styling */
+QWidget {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Search Section Styling */
+#search-section {
+    margin-bottom: 5px;
+    padding: 20px;
+    background-color: #34495e;
+    color: #ecf0f1;
+    font-size:24px;
+    font-style:bold;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#search-section QComboBox {
+    font-size: 20px;
+    font-style:bold;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border: 2px solid #2980b9;
+    border-radius: 5px;
+    color:black;
+    background-color: #ecf0f1;
+}
+#search-section QComboBox QAbstractItemView {
+    background-color: #34495e;
+    border: 1px solid #2980b9;
+    selection-background-color: #2980b9;
+    selection-color: #ffffff;
+}
+#search-section QComboBox:drop-down {
+    border: none;
+    background-color: #ecf0f1;
+}
+
+/* Styling for QLineEdit fields */
+#search-section QLineEdit {
+    font-size: 20px;
+    padding: 8px 12px;
+    border: 2px solid #2980b9;
+    border-radius: 5px;
+    color:black;
+    font-style:bold;
+    background-color: #ecf0f1;
+}
+#search-section QLineEdit:focus {
+    border-color: #3498db;
+    background-color: #ecf0f1;
+}
+
+
+/* Employee Details Form Styling */
+#employee-details-form {
+    margin-bottom: 5px;
+    padding: 10px;
+    background-color: #34495e;
+    color: #ecf0f1;
+    font-size:24px;
+    font-style:bold;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+#employee-details-form QLabel {
+    font-size: 22px;
+    font-style:bold;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 8px;
+    color: #ecf0f1;
+    background-color:none;
+   
+}
+#employee-details-form QLabel:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02); /* Slight zoom effect on hover */
+}
+#employee-details-form QComboBox {
+    font-size: 20px;
+    font-style:bold;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border: 2px solid #2980b9;
+    border-radius: 5px;
+    color:black;
+    background-color: #ecf0f1;
+}
+#employee-details-form QComboBox QAbstractItemView {
+    background-color: #34495e;
+    border: 1px solid #2980b9;
+    selection-background-color: #2980b9;
+    selection-color: #ffffff;
+}
+#employee-details-form QComboBox:drop-down {
+    border: none;
+    background-color: #ecf0f1;
+}
+
+/* Styling for QLineEdit fields */
+#employee-details-form QLineEdit,QDateEdit{
+    font-size: 20px;
+    padding: 8px 12px;
+    border: 2px solid #2980b9;
+    border-radius: 5px;
+    color:black;
+    font-style:bold;
+    background-color: #ecf0f1;
+}
+#employee-details-form QTableWidget,QDateEdit:focus {
+    border-color: #3498db;
+    background-color: #ecf0f1;
+}
+
+
+
+
+
+
+/* Specific Button Styling */
+#save-button {
+    background-color: #28a745; /* Green */
+    color: white;
+    border: 2px solid #218838;
+}
+
+#save-button:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+/* Update Button Styling */
+#update-button {
+    background-color: #007bff; /* Blue */
+    color: white;
+    border: 2px solid #0069d9;
+}
+
+#update-button:hover {
+    background-color: #0069d9;
+    border-color: #0056b3;
+}
+
+/* Delete Button Styling */
+#delete-button {
+    background-color: #dc3545; /* Red */
+    color: white;
+    border: 2px solid #c82333;
+}
+
+#delete-button:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+/* Search Button Styling */
+#Search-button {
+    background-color: #ffc107; /* Yellow */
+    color: black;
+    border: 2px solid #e0a800;
+}
+
+#Search-button:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+
+/* Clear Button Styling */
+#clear-button {
+    background-color: #6c757d; /* Gray */
+    color: white;
+    border: 2px solid #5a6268;
+}
+
+#clear-button:hover {
+    background-color: #5a6268;
+    border-color: #4e555b;
+}
+
+/* Specific Styling for Buttons */
+QPushButton:enabled {
+    background-color: #17a2b8; /* Teal */
+    color: white;
+    border: 2px solid #138496;
+}
+
+QPushButton:disabled {
+    background-color: rgb(199, 191, 189);
+    color: #7f8c8d;
+}
+
+#upload-button:hover {
+    background-color:rgb(26, 19, 150);
+    border-color: #117a8b;
+}
+/* Button Effects (Universal Styling) */
+QPushButton {
+    font-size: 16px;
+    padding: 12px 20px;
+    font-style:bold;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+
+/* Profile Picture Styling */
+#profilePictureFrame {
+    grid-column: span 3;
+    text-align: center;
+}
+
+
+/* Employee Table Styling */
+#employee-table {
+    background: linear-gradient(to right, #34495e, #2c3e50);
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px;
+    font-weight: bold;
+    border-top: 2px solid #1abc9c;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tooltip Styling */
+QToolTip {
+    background-color: #1abc9c;
+    color: black;
+    border: 1px solid #16a085;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+QScrollBar:vertical {
+    background: #ecf0f1;
+    width: 30px; /* Increased width from 10px to 15px */
+    margin: 15px 0;
+    border: 1px solid #bdc3c7;
+}
+
+QScrollBar::handle:vertical {
+    background: #1abc9c;
+    border-radius: 5px;
+    min-height: 20px; /* Ensure handle is not too small */
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #16a085;
+}
+
+
+/* Table Styling */
+QTableWidget {
+    background-color: black;
+    border: 1px solid #dcdde1;
+    border-radius: 10px;
+    padding: 10px;
+    gridline-color: #bdc3c7;
+    font-size: 16px;
+}
+
+QTableWidget::item {
+    padding: 5px;
+    margin: 3px;
+}
+
+QTableWidget::item:selected {
+    background-color: rgb(238, 246, 10);
+    color: black;
+}
+
+/* Horizontal Header Styling */
+QHeaderView::section {
+    background-color: #2980b9; /* Blue background for headers */
+    color: white;
+    font-size: 16px; /* Font size 16px */
+    font-weight: bold; /* Bold font */
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #1abc9c;
+}

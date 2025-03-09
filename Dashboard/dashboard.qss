@@ -1,0 +1,146 @@
+/* General App Styling */
+QWidget {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color:rgb(245, 249, 244);
+}
+
+/* Top Section Styling */
+#topFrame {
+    background: linear-gradient(to right, #34495e, #2c3e50);
+    color: black;
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+#topFrame QLabel {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: black; /* Softer white text color */
+}
+
+/* Sidebar Styling */
+#sidebarFrame {
+    background-color: #2c3e50;
+    color: white;
+    border-right: 3px solid #1abc9c;
+    box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.1);
+}
+#sidebarFrame QPushButton {
+    font-size: 16px;
+    padding: 15px 10px;
+    border: none;
+    text-align: left;
+    margin: 12px 15px;
+    border-radius: 10px;
+    background-color: #34495e;
+    color: #ecf0f1;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+#sidebarFrame QPushButton:hover {
+    background-color: #1abc9c;
+    color: white;
+    transform: translateX(5px); /* Adds a slight hover movement */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Area Styling */
+#mainAreaFrame {
+    background-color: #ecf0f1;
+    padding: 30px;
+    border: 2px solid #bdc3c7;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+#mainAreaFrame QLabel {
+    font-size: 20px;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #dcdde1;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #2c3e50;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+#mainAreaFrame QLabel:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+/* Bottom Section Styling */
+#bottomFrame {
+    background: linear-gradient(to right, #34495e, #2c3e50);
+    color:black;
+    text-align: center;
+    font-size: 14px;
+    padding: 15px;
+    border-top: 2px solid #1abc9c;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
+}
+#bottomFrame QLabel {
+    color:black;
+    font-size: 14px;
+}
+
+/* Button Effects (Universal Styling) */
+QPushButton {
+    font-size: 16px;
+    color: white;
+    padding: 12px 20px;
+    background: linear-gradient(to right, #1abc9c, #16a085);
+    border: 2px solid #16a085;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+QPushButton:hover {
+    background: linear-gradient(to right, #16a085, #1abc9c);
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Tooltip Styling */
+QToolTip {
+    background-color: #1abc9c;
+    color: white;
+    border: 1px solid #16a085;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Scrollbar Styling */
+QScrollBar:vertical {
+    background: #ecf0f1;
+    width: 10px;
+    margin: 15px 0;
+    border: 1px solid #bdc3c7;
+}
+QScrollBar::handle:vertical {
+    background: #1abc9c;
+    border-radius: 5px;
+}
+QScrollBar::handle:vertical:hover {
+    background: #16a085;
+}
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0;
+}
+
+/* Table Styling */
+QTableWidget {
+    background-color: #ffffff;
+    border: 1px solid #dcdde1;
+    border-radius: 10px;
+    padding: 10px;
+    gridline-color: #bdc3c7;
+    font-size: 16px;
+}
+QTableWidget::item {
+    padding: 5px;
+    margin: 3px;
+}
+QTableWidget::item:selected {
+    background-color: #1abc9c;
+    color: white;
+}

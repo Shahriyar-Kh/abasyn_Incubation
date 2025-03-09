@@ -1,0 +1,75 @@
+/* Title Styling */
+QLabel {
+    font-size: 24px;
+    font-weight: bold;
+    color: black; /* Black text for the title */
+    text-align: center;
+    margin-top: 20px; /* Adds some space above the title */
+    margin-bottom: 20px; /* Adds space below the title */
+}
+
+/* Input Fields Styling */
+QLineEdit {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border: 2px solid #1abc9c;
+    border-radius: 5px;
+    padding: 12px; /* Increased padding for better spacing inside fields */
+    font-size: 16px;
+    margin: 10px 0;
+    width: 80%; /* Makes the input fields narrower for better alignment */
+    margin-left: 10%; /* Centers the input fields */
+    min-height: 40px; /* Ensures a minimum height for fields */
+    box-sizing: border-box; /* Ensures padding doesn't affect width/height */
+}
+
+/* Adjusting Placeholder Text */
+QLineEdit::placeholder {
+    color: #999; /* Gray color for placeholder text */
+    font-style: italic; /* Makes it distinct */
+}
+
+/* Button Styling */
+QPushButton {
+    background-color: #1abc9c;
+    color: white;
+    padding: 12px; /* Increased padding for better height */
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #16a085;
+    width: 80%; /* Makes the button width the same as the input fields */
+    margin-left: 10%; /* Centers the button */
+    margin-top: 10px; /* Adds space above buttons */
+}
+
+QPushButton:hover {
+    background-color: #16a085;
+    border-color: #1abc9c;
+}
+
+/* MessageBox Styling */
+QMessageBox {
+    background-color: #ffffff;
+    border: 2px solid #1abc9c;
+    border-radius: 10px;
+}
+
+/* Title Padding */
+QLabel#title {
+    margin-bottom: 30px; /* Adds more space below the title */
+}
+
+/* Alignment of Widgets */
+QWidget {
+    padding: 20px;
+}
+
+/* Specific adjustments for the username and password input fields */
+QLineEdit#usernameField,
+QLineEdit#passwordField {
+    max-width: 350px;
+}
+
+/* Prevent Overlapping Between Title and Fields */
+QVBoxLayout {
+    spacing: 20px; /* Adds spacing between elements in the layout */
+}

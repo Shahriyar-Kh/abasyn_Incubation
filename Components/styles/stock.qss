@@ -1,0 +1,200 @@
+/* General Style */
+QWidget {
+    background-color: #F5F5F5;  /* Light grey background */
+    font-family: "Arial", sans-serif;
+    color: #212121;  /* Dark text for readability */
+}
+
+/* Buttons */
+#add_button, #update_button, #delete_button, #clear_button, #search_button {
+    background-color: #4CAF50;  /* Green background for Add button */
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #388E3C;
+    padding: 10px 20px;
+    min-width: 120px;
+    font-weight: bold;
+    font-size: 16px;  /* Increased font size */
+    transition: all 0.3s ease;
+    text-align: center;  /* Ensure text is centered */
+}
+
+/* Disabled Add Button */
+#add_button:disabled {
+    background-color: #B0BEC5;  /* Light grey background for disabled button */
+    color: #9E9E9E;  /* Grey text for disabled button */
+    border: 1px solid #B0BEC5;  /* Grey border */
+    cursor: not-allowed;  /* Change cursor to indicate the button is not clickable */
+}
+
+/* Hover effect for Add Button (enabled state) */
+#add_button:hover{
+    background-color: #45A049;  /* Slightly darker green for Add and Search button */
+}
+
+#update_button {
+    background-color: #2196F3;  /* Blue background for Update button */
+    border: 1px solid #1976D2;
+}
+
+#update_button:hover {
+    background-color: #1E88E5;  /* Slightly darker blue */
+}
+
+#delete_button {
+    background-color: #F44336;  /* Red background for Delete button */
+    border: 1px solid #D32F2F;
+}
+
+#delete_button:hover {
+    background-color: #E53935;  /* Slightly darker red */
+}
+
+#clear_button {
+    background-color: #FFC107;  /* Amber background for Clear button */
+    border: 1px solid #FFB300;
+}
+
+#clear_button:hover {
+    background-color: #FFB300;  /* Slightly darker amber */
+}
+
+/* Professional Search Button */
+#search_button {
+    background-color:rgb(69, 121, 0);  /* Teal color for a professional look */
+
+}
+
+/* Hover effect */
+#search_button:hover {
+    background-color: #004D40;  /* Darker teal on hover */
+    border: 1px solid #00796B;  /* Border becomes lighter on hover */
+}
+
+/* Focus effect */
+#search_button:focus {
+    box-shadow: 0 0 8px rgba(0, 121, 107, 0.6);  /* Soft teal glow when focused */
+    outline: none;  /* Remove default focus outline */
+}
+
+
+#low_stock_button {
+        background-color: #ff4d4d; /* Red background */
+        color: white; /* White text */
+        border-radius: 8px; /* Rounded corners */
+        font-size: 14px; /* Font size */
+        padding: 10px 20px; /* Padding */
+        border: 2px solid #ff0000; /* Red border */
+    }
+
+    #low_stock_button:hover {
+        background-color: #ff3333; /* Slightly darker red on hover */
+    }
+
+    #low_stock_button:pressed {
+        background-color: #cc0000; /* Dark red when pressed */
+    }
+
+/* Input Fields */
+QLineEdit, QComboBox, QDateEdit {
+    background-color: #FFFFFF;  /* White background for input fields */
+    border: 1px solid #B0BEC5;  /* Light grey border */
+    border-radius: 5px;
+    padding: 6px;
+    font-size: 12pt;
+    transition: all 0.2s ease-in-out;
+}
+
+QLineEdit:focus, QComboBox:focus, QDateEdit:focus {
+    border: 1px solid #4CAF50;  /* Green border on focus */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);  /* Soft green glow */
+}
+
+/* Table Styling */
+QTableWidget {
+    background-color: #FFFFFF;
+    border: 1px solid #B0BEC5;
+    border-radius: 5px;
+    font-size: 12pt;
+    color: #212121;
+    gridline-color: #B0BEC5;
+    transition: all 0.3s ease;
+}
+
+QTableWidget::item {
+    padding: 8px;
+}
+
+QTableWidget::item:selected {
+    background-color: #4CAF50;  /* Highlight selected row in green */
+    color: white;
+}
+
+/* ComboBox (Filter) */
+#filter_combo {
+    background-color: #FFFFFF;
+    border: 1px solid #B0BEC5;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+#filter_combo:focus {
+    border: 1px solid #2196F3;  /* Blue border on focus */
+}
+
+/* Labels */
+QLabel {
+    font-size: 12pt;
+    color: #212121;  /* Dark text color for labels */
+    font-weight: bold;
+}
+
+/* Sidebar Styling */
+#sidebar {
+    background-color: #424242;
+    width: 200px;
+    padding: 20px;
+    color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#sidebar QPushButton {
+    background-color: #616161;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;  /* Increased font size */
+    transition: all 0.3s ease;
+}
+
+#sidebar QPushButton:hover {
+    background-color: #757575;
+    transform: scale(1.05);
+}
+
+/* Table Header Styling */
+QHeaderView::section {
+    background-color:rgb(22, 28, 31);
+    padding: 6px;
+    font-size: 11pt;  /* Increased font size */
+    font-weight: bold;
+    color: white;
+    border: 1px solid #B0BEC5;
+    text-align: center;
+}
+
+/* Stock Management Page Layout */
+#stock_table {
+    border: 1px solid #B0BEC5;
+    background-color: #FFFFFF;
+    color: #212121;
+    font-size: 12pt;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+#stock_table:hover {
+    border: 1px solid #4CAF50;  /* Green border on hover */
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.3);
+}

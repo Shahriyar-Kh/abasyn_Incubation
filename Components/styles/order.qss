@@ -1,0 +1,324 @@
+/* General Style for the entire app */
+* {
+    font-family: Arial, sans-serif;
+}
+
+/* Top Section Styling */
+#top_frame {
+    background-color: #1a1a2e; /* Deep navy blue */
+    padding: 10px;
+    border-bottom: 2px solid #16213e; /* Slightly lighter navy blue */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#restaurant_label {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f5f5f5; /* Light gray */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#order_management_label {
+    font-size: 18px;
+    color: #a8a8b3; /* Subtle gray */
+}
+
+/* Menu Section Styling */
+#menu_frame {
+    background-color: #f7f9fc; /* Soft off-white */
+    border-right: 2px solid #d1d5db; /* Light gray border */
+}
+
+#menu_scroll_area {
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ffffff; /* White for contrast */
+}
+
+#menu_scroll_widget {
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    padding: 5px;
+}
+#menu_frame QLabel {
+    font-size: 20px;
+    font-weight: bold;
+    color: #243b55; /* Muted dark blue */
+    padding: 10px;
+    background-color: #eef2f5; /* Light blue-gray background */
+    border-bottom: 2px solid #d1d5db; /* Optional: Bottom border */
+    text-align: center;
+}
+
+#category{
+    font-size: 20px;
+    font-weight: bold;
+    color: #243b55; /* Muted dark blue */
+    padding: 10px 0;
+    border-bottom: 2px solid #d1d5db;
+    text-align: center; /* Center-align the text */
+    background-color: #eef2f5; /* Very light blue-gray */
+}
+
+#items_btn{
+    font-size: 16px;
+    color: #34495e; /* Medium dark gray-blue */
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background-color: #ffffff;
+    margin: 8px;
+    transition: all 0.3s ease;
+}
+
+#items_btn:hover {
+    background-color: #4a69bd; /* Professional muted blue */
+    color: #ffffff; /* White text */
+    transform: scale(1.05);
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++Cart Section Styling ++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+#cart_frame {
+    background-color: #f0f8ff; /* Light blue background */
+    border: 1px solid #a8a8a8; /* Light gray border */
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#customer_details_frame, #cart_items_frame {
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#name_input, #phone_input, #address_input, #table_input, #delivery_input {
+    padding: 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9; /* Light gray input */
+    transition: all 0.3s ease;
+}
+
+#name_input:focus, #phone_input:focus, #address_input:focus, #table_input:focus, #delivery_input:focus {
+    border-color: #4a69bd;
+    box-shadow: 0 0 5px rgba(74, 105, 189, 0.5); /* Soft blue glow */
+}
+
+
+/* Buttons Styling */
+#order_now_button, #edit_order_button, #delete_order_button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#order_now_button {
+    background-color: #27ae60; /* Soft green */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#order_now_button:hover {
+    background-color: #1e8449; /* Darker green */
+    transform: translateY(-2px);
+}
+
+#edit_order_button {
+    background-color: #2980b9; /* Muted blue */
+}
+
+#edit_order_button:hover {
+    background-color: #21618c; /* Darker blue */
+}
+
+#delete_order_button {
+    background-color: #e74c3c; /* Red for danger */
+}
+
+#delete_order_button:hover {
+    background-color: #c0392b; /* Darker red */
+}
+
+/* Cart Table Styling */
+
+#cart_table {
+    font-size: 14px;
+    color: #2c3e50; /* Dark gray-blue text */
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+#cart_table QHeaderView::section {
+    background-color: #4caf50; /* Green header */
+    color: white; /* White text */
+    font-weight: bold;
+    border: 1px solid #d1d5db;
+    text-align: center;
+}
+
+
+
+
+/* ++++++++++++++++++++++++++++++++++++ Orders Frame Styling ++++++++++++++++++++++++++++++++++++++ */
+#orders_frame {
+    background-color: #f7f9fc;
+    border: 1px solid #d1d5db;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Orders Table Styling */
+#orders_table {
+    font-size: 14px;
+    color: #34495e; /* Muted gray-blue */
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    background-color: #ffffff;
+
+    /* Ensure the table expands dynamically */
+    width: 100%; /* Use full width of the frame */
+    height: 100%; /* Use full height of the frame */
+}
+
+#orders_table QHeaderView::section {
+ background-color:rgb(44, 41, 41); /* Light gray background */
+    color: #f5f5f5;
+    font-weight: bold;
+    border: 1px solid #d1d5db;
+    text-align: center;
+}
+
+/* Add Scroll Bar Styling */
+#orders_table QScrollBar:vertical {
+    border: 1px solid #d1d5db;
+    background: #f7f9fc;
+    width: 10px;
+    margin: 0px 0px 0px 0px;
+}
+
+#orders_table QScrollBar:horizontal {
+    border: 1px solid #d1d5db;
+    background: #f7f9fc;
+    height: 10px;
+    margin: 0px 0px 0px 0px;
+}
+
+/* Scroll Handle Styling */
+#orders_table QScrollBar::handle {
+    background: #34495e;
+    border-radius: 5px;
+}
+
+#orders_table QScrollBar::handle:hover {
+    background: #1a1a2e; /* Darker shade on hover */
+}
+
+/* AddToCartDialog Styling */
+#add_to_cart_dialog {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/* Styling the labels inside AddToCartDialog */
+#add_button {
+    background-color: #4caf50; /* Green */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#add_button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+
+/* Cancel Button */
+#cancel_button {
+    background-color: #f44336;
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#cancel_button:hover {
+    background-color: #e53935;
+}
+
+#cancel_button:pressed {
+    background-color: #c62828;
+}
+
+#quantity_label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #243b55; /* Muted dark blue */
+}
+
+#quantity_input {
+    font-size: 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #f9fafb;
+}
+
+
+#add_to_cart_button:pressed {
+    background-color: #388e3c;
+}
+
+
+
+/* Total Bill Label */
+#total_price_label {
+    font-size: 18px;
+    font-weight: bold;
+    color:rgb(175, 91, 76);
+    margin-top: 20px;
+    text-align: right;
+}
+
+/* Bill Now Button Styling */
+#bill_now {
+    background-color: #4caf50; /* Green background */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Subtle rounded corners */
+}
+/* Hover Effect */
+#bill_now:hover {
+    background-color: #45a049; /* Darker green for hover */
+    border-color: #2e7d32; /* Darker border color on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Pressed Effect */
+#bill_now:pressed {
+    background-color: #388e3c; /* Dark green for pressed state */
+    border-color: #1b5e20; /* Even darker border color */
+    transform: scale(0.98); /* Slightly shrink button for a pressed effect */
+}

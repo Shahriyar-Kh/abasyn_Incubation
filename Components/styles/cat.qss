@@ -1,0 +1,53 @@
+/* Main Container */
+#main_container {
+    background-color: #f5f5f5;
+    font-family: Arial;
+}
+
+/* Input Frame */
+#frame_input {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* Table Frame */
+#frame_table {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* Buttons */
+#add_button {
+    background-color: #28a745;  /* Green */
+    color: white;
+}
+#update_button {
+    background-color: #007bff;  /* Blue */
+    color: white;
+}
+#delete_button {
+    background-color: #dc3545;  /* Red */
+    color: white;
+}
+#clear_button {
+    background-color: #ffc107;  /* Yellow */
+    color: black;
+}
+#search_button {
+    background-color: #17a2b8;  /* Teal */
+    color: white;
+}
+#add_button:hover, #update_button:hover, #delete_button:hover, #clear_button:hover, #search_button:hover {
+    opacity: 0.9;
+}
+
+/* Input Fields */
+#name_input, #search_input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+}
